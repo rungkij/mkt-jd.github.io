@@ -47,59 +47,62 @@ export const TEAM_DATA: TeamMember[] = [
   {
     id: 'leader-01',
     name: "พี่เอิธ (P'Earth)",
-    role: "Marketing & Sales Lead (The Commander)",
+    role: "หัวหน้าฝ่ายการตลาดและการขาย (แม่ทัพใหญ่)",
     roleType: 'LEADER',
-    coreFunction: "กำหนดทิศทางยุทธศาสตร์การตลาดและการขาย, ตัดสินใจขั้นสุดท้าย (Go/No-Go), เป็นจุดเชื่อมประสานระหว่างทีมการตลาด ทีมขาย และผู้บริหารระดับสูง",
+    coreFunction: "กำหนดทิศทางยุทธศาสตร์การตลาดและการขาย, ตัดสินใจขั้นสุดท้าย (ลุย/ไม่ลุย), เป็นจุดเชื่อมประสานระหว่างทีมการตลาด ทีมขาย และผู้บริหารระดับสูง",
     protocols: {
-      urgent: "Direct Line / Call (สายด่วน)",
-      routine: "Google Workspace / Weekly Meeting",
-      rule: "Trust your gut, but verify with data. (ถ้าไม่แน่ใจ ให้ถาม)"
+      urgent: "สายด่วน / โทรศัพท์",
+      routine: "Google Workspace / ประชุมรายสัปดาห์",
+      rule: "เชื่อสัญชาตญาณ แต่ตรวจสอบด้วยข้อมูล (ไม่ชัวร์ให้ถาม)"
     }
   },
   {
     id: 'op-01',
     name: "แตงกวา (Tangkwa)",
-    role: "IT + AI + Ads Specialist (The Architect)",
+    role: "ผู้เชี่ยวชาญ IT + AI + Ads (สถาปนิกระบบ)",
     roleType: 'IT_AI',
-    mainDuty: "ดูแลระบบหลังบ้านทั้งหมด (Ads Optimization) และแปรรูป Data ให้เป็น Insight ที่ทีมนำไปใช้ต่อได้จริง",
+    mainDuty: "ดูแลระบบหลังบ้านทั้งหมด (ปรับแต่งโฆษณา) และแปรรูปข้อมูลดิบให้เป็นข้อมูลเชิงลึกที่ทีมนำไปใช้ต่อได้จริง",
     tasks: {
-      daily: ["Monitor Ads Performance (Meta/Google)", "ตรวจสอบความผิดปกติของค่า CPL/CTR", "Support ปัญหา IT และ Hardware ของทีม"],
+      daily: ["ตรวจสอบผลโฆษณา (Meta/Google)", "ตรวจสอบความผิดปกติของค่า CPL/CTR", "ซัพพอร์ตปัญหา IT และอุปกรณ์ของทีม"],
       weekly: {
-        name: "Competitor Intelligence Scouting",
+        name: "หน่วยสอดแนมคู่แข่ง",
         tool: "Perplexity AI + Social Listening",
-        outputs: ["วิเคราะห์โปรโมชั่นคู่แข่ง", "จับตา Tone of Voice ใหม่ๆ", "ถอดรหัส Key Visual คู่แข่ง"]
+        outputs: ["วิเคราะห์โปรโมชั่นคู่แข่ง", "จับตาโทนเสียงใหม่ๆ", "แกะรอยภาพโฆษณาคู่แข่ง"]
       },
-      special: "R&D เครื่องมือ AI ใหม่ๆ (Gen AI) เพื่อลดเวลาทำงานและสร้าง Workflow อัตโนมัติ"
+      special: "วิจัยและพัฒนาเครื่องมือ AI ใหม่ๆ เพื่อลดเวลาทำงานและสร้างระบบอัตโนมัติ"
     }
   },
   {
     id: 'op-02',
     name: "บอย (Boy)",
-    role: "Senior Graphic & Creative (The Creator)",
+    role: "กราฟิกอาวุโสและครีเอทีฟ (นักสร้างสรรค์)",
     roleType: 'GRAPHIC',
-    mainDuty: "ผลิต Visual Content ทั้งภาพและวิดีโอ เพื่อตอบโจทย์ Performance Marketing และ Branding (เน้นขายได้และภาพลักษณ์ดี)",
-    workflowRule: "Creative Pattern Protocol",
+    mainDuty: "ผลิตสื่อภาพและวิดีโอ เพื่อตอบโจทย์การตลาดเน้นผลลัพธ์และการสร้างแบรนด์ (เน้นขายได้และภาพลักษณ์ดี)",
     tasks: {
-      daily_pattern: {
-        images: "Stills (Key Visual / Perspective / Mood & Tone)",
-        short_videos: "Short Video (Reels / TikTok / Walkthrough)",
-        ads: "Conversion Ads (Promotion / Hard Sell / Info)"
-      },
-      input_source: "รับ Brief Strategy จากแตงกวา และ Direction จากพี่เอิธ"
+      daily: [
+        "ออกแบบภาพนิ่ง (Key Visual / Perspective / Mood & Tone)",
+        "ตัดต่อวิดีโอสั้น (Reels / TikTok / Walkthrough)",
+        "ออกแบบภาพโฆษณา (Conversion Ads / Promotion / Hard Sell)"
+      ],
+      special: {
+        name: "กระบวนการสร้างสรรค์",
+        style: "Creative Pattern Protocol",
+        collaboration: "รับบรีฟจากแตงกวา และทิศทางจากพี่เอิธ"
+      }
     }
   },
   {
     id: 'op-03',
     name: "สุ (Su)",
-    role: "Content Creator & Organic Lead (The Soul)",
+    role: "คอนเทนต์ครีเอเตอร์ (จิตวิญญาณ)",
     roleType: 'ORGANIC',
-    mainDuty: "สร้างสรรค์ Content ให้เพจมีชีวิตชีวา (Engagement) และนำเสนอภาพลักษณ์โครงการให้น่าอยู่ (Desire)",
+    mainDuty: "สร้างสรรค์คอนเทนต์ให้เพจมีชีวิตชีวา (เน้นการมีส่วนร่วม) และนำเสนอภาพลักษณ์โครงการให้น่าอยู่ (สร้างความต้องการ)",
     tasks: {
-      daily: ["Curate Organic Content Flow", "Craft Engaging Captions (Hook/Story)", "Active Response (Inbox/Comment SLA < 1hr)", "สรุป Voice of Customer"],
+      daily: ["ดูแลคอนเทนต์เพจให้ลื่นไหล", "เขียนแคปชั่นให้น่าติดตาม (Hook/Story)", "ตอบแชท/คอมเมนต์ (ภายใน 1 ชม.)", "สรุปเสียงตอบรับจากลูกค้า"],
       special: {
-        name: "Project Walkthrough Reviews",
-        style: "Real User Experience (POV), เน้นความจริงใจ ไม่ขายตรงเกินไป",
-        collaboration: "ถ่ายทำ Footage คุณภาพสูง ส่งต่อให้ Boy ตัดต่อ"
+        name: "รีวิวพาชมโครงการ",
+        style: "ประสบการณ์ผู้ใช้จริง (POV) จริงใจ ไม่ขายยัดเยียด",
+        collaboration: "ถ่ายฟุตเทจคุณภาพสูง ส่งต่อให้บอยตัดต่อ"
       }
     }
   }

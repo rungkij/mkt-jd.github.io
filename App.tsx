@@ -25,7 +25,7 @@ const App: React.FC = () => {
         {/* Leader Section */}
         <div className="w-full max-w-3xl relative z-10">
             <div className="text-center mb-4 opacity-50 font-tech tracking-[0.3em] text-amber-500 text-xs uppercase">
-                Command Node
+                ศูนย์บัญชาการ
             </div>
             <SciFiCard 
                 colors={THEME_COLORS[leader.roleType]} 
@@ -58,7 +58,7 @@ const App: React.FC = () => {
         {/* Operatives Grid */}
         <div className="w-full relative z-10">
             <div className="text-center mb-6 opacity-50 font-tech tracking-[0.3em] text-blue-500 text-xs uppercase">
-                Operational Units
+                หน่วยปฏิบัติการ
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                 {operatives.map((op, index) => (
@@ -83,7 +83,7 @@ const App: React.FC = () => {
                          </div>
                          
                          <div className="mb-4">
-                             <div className="text-xs uppercase text-slate-500 font-tech mb-1">Primary Objective</div>
+                             <div className="text-xs uppercase text-slate-500 font-tech mb-1">เป้าหมายหลัก</div>
                              <p className="text-sm text-slate-300 font-light leading-relaxed">
                                  {op.mainDuty}
                              </p>
@@ -101,24 +101,24 @@ const App: React.FC = () => {
       <footer className="fixed bottom-0 w-full bg-black/80 backdrop-blur border-t border-white/10 py-2 overflow-hidden z-50">
         <motion.div 
             animate={{ x: [0, -1000] }}
-            transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
+            transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
             className="flex gap-8 whitespace-nowrap text-[10px] font-tech text-blue-400/50 uppercase tracking-widest"
         >
-            <span>System Status: Optimal</span>
+            <span>สถานะระบบ: ปกติ</span>
             <span>///</span>
-            <span>Network: Secured</span>
+            <span>เครือข่าย: ปลอดภัย</span>
             <span>///</span>
-            <span>Data Stream: Active</span>
+            <span>สตรีมข้อมูล: กำลังทำงาน</span>
             <span>///</span>
-            <span>Protocol: NexGen-Alpha</span>
+            <span>โปรโตคอล: NexGen-Alpha</span>
             <span>///</span>
-            <span>Monitoring: Ads, CPL, Organic Traffic</span>
+            <span>กำลังตรวจสอบ: Ads, CPL, Organic Traffic</span>
             <span>///</span>
-            <span>Creative Output: High Efficiency</span>
+            <span>ผลลัพธ์ฝ่ายสร้างสรรค์: ประสิทธิภาพสูง</span>
             <span>///</span>
-            <span>System Status: Optimal</span>
+            <span>สถานะระบบ: ปกติ</span>
             <span>///</span>
-            <span>Network: Secured</span>
+            <span>เครือข่าย: ปลอดภัย</span>
             <span>///</span>
         </motion.div>
       </footer>

@@ -22,7 +22,7 @@ const Header: React.FC = () => {
           <div className="flex items-center gap-2 text-[10px] text-blue-300/70 font-tech tracking-wider">
             <span>SYS.VER.4.2.0</span>
             <span className="w-1 h-1 bg-blue-500 rounded-full" />
-            <span>SECURE CONNECTION</span>
+            <span>เชื่อมต่อสำเร็จ</span>
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
       <div className="hidden md:flex items-center gap-6 font-tech text-blue-200/80">
         <div className="flex items-center gap-2">
             <Wifi size={16} />
-            <span className="text-sm">LINK ESTABLISHED</span>
+            <span className="text-sm">ออนไลน์</span>
         </div>
         <div className="flex items-center gap-2">
             <Battery size={16} />

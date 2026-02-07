@@ -15,19 +15,19 @@ const DetailSection: React.FC<DetailSectionProps> = ({ member, colors }) => {
       <div className="mt-4 space-y-3">
         <div className="flex items-center gap-2 mb-2">
             <Activity className={`w-4 h-4 ${colors.primary}`} />
-            <span className={`text-xs font-tech tracking-wider uppercase ${colors.secondary}`}>Command Protocols</span>
+            <span className={`text-xs font-tech tracking-wider uppercase ${colors.secondary}`}>โปรโตคอลคำสั่ง</span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             <div className={`p-2 rounded border ${colors.border} bg-black/20`}>
-                <div className={`text-[10px] uppercase ${colors.secondary} mb-1`}>Urgent Priority</div>
+                <div className={`text-[10px] uppercase ${colors.secondary} mb-1`}>ระดับเร่งด่วน</div>
                 <div className="text-sm font-semibold">{protocols.urgent}</div>
             </div>
             <div className={`p-2 rounded border ${colors.border} bg-black/20`}>
-                <div className={`text-[10px] uppercase ${colors.secondary} mb-1`}>Routine Comms</div>
+                <div className={`text-[10px] uppercase ${colors.secondary} mb-1`}>การสื่อสารทั่วไป</div>
                 <div className="text-sm font-semibold">{protocols.routine}</div>
             </div>
             <div className={`p-2 rounded border ${colors.border} bg-black/20`}>
-                <div className={`text-[10px] uppercase ${colors.secondary} mb-1`}>Override Rule</div>
+                <div className={`text-[10px] uppercase ${colors.secondary} mb-1`}>กฎเหล็ก</div>
                 <div className="text-sm font-semibold text-amber-300">{protocols.rule}</div>
             </div>
         </div>
@@ -42,7 +42,7 @@ const DetailSection: React.FC<DetailSectionProps> = ({ member, colors }) => {
         <div className="flex items-center gap-2">
             <Layers className={`w-4 h-4 ${colors.primary}`} />
             <span className={`text-xs font-tech tracking-wider uppercase ${colors.secondary}`}>
-                {workflowRule ? `Workflow: ${workflowRule}` : 'Daily Operations'}
+                {workflowRule ? `ขั้นตอนการทำงาน: ${workflowRule}` : 'ภารกิจประจำวัน'}
             </span>
         </div>
         
@@ -59,19 +59,19 @@ const DetailSection: React.FC<DetailSectionProps> = ({ member, colors }) => {
                         <div className={`text-sm font-bold ${colors.primary} leading-tight`}>
                             {tasks.daily_pattern.images}
                         </div>
-                        <div className="text-[9px] opacity-60 font-tech uppercase mt-1 tracking-wider">Stills</div>
+                        <div className="text-[9px] opacity-60 font-tech uppercase mt-1 tracking-wider">ภาพนิ่ง</div>
                     </div>
                     <div className="bg-white/5 p-2 rounded flex flex-col items-center justify-center min-h-[60px]">
                         <div className={`text-sm font-bold ${colors.primary} leading-tight`}>
                             {tasks.daily_pattern.short_videos}
                         </div>
-                        <div className="text-[9px] opacity-60 font-tech uppercase mt-1 tracking-wider">Shorts</div>
+                        <div className="text-[9px] opacity-60 font-tech uppercase mt-1 tracking-wider">วิดีโอสั้น</div>
                     </div>
                     <div className="bg-white/5 p-2 rounded flex flex-col items-center justify-center min-h-[60px]">
                         <div className={`text-sm font-bold ${colors.primary} leading-tight`}>
                             {tasks.daily_pattern.ads}
                         </div>
-                        <div className="text-[9px] opacity-60 font-tech uppercase mt-1 tracking-wider">Ads</div>
+                        <div className="text-[9px] opacity-60 font-tech uppercase mt-1 tracking-wider">โฆษณา</div>
                     </div>
                 </div>
             )}
@@ -83,7 +83,7 @@ const DetailSection: React.FC<DetailSectionProps> = ({ member, colors }) => {
         <div className="space-y-1">
             <div className="flex items-center gap-2">
                 <AlertCircle className={`w-4 h-4 ${colors.primary}`} />
-                <span className={`text-xs font-tech tracking-wider uppercase ${colors.secondary}`}>Intelligence (Weekly)</span>
+                <span className={`text-xs font-tech tracking-wider uppercase ${colors.secondary}`}>ข่าวกรอง (รายสัปดาห์)</span>
             </div>
             <div className={`p-3 rounded border ${colors.border} bg-black/20 text-sm`}>
                 <div className="flex justify-between mb-2 border-b border-white/10 pb-1">
@@ -108,7 +108,7 @@ const DetailSection: React.FC<DetailSectionProps> = ({ member, colors }) => {
          <div className="space-y-1">
             <div className="flex items-center gap-2">
                 <Activity className={`w-4 h-4 ${colors.primary}`} />
-                <span className={`text-xs font-tech tracking-wider uppercase ${colors.secondary}`}>Special Assignment</span>
+                <span className={`text-xs font-tech tracking-wider uppercase ${colors.secondary}`}>ภารกิจพิเศษ</span>
             </div>
              <div className={`p-3 rounded border ${colors.border} bg-black/20 text-sm`}>
                 {typeof tasks.special === 'string' ? (
@@ -131,7 +131,7 @@ const DetailSection: React.FC<DetailSectionProps> = ({ member, colors }) => {
       {tasks?.input_source && (
           <div className={`mt-auto pt-2 flex items-center gap-2 text-xs ${colors.secondary} opacity-70`}>
               <ArrowRight size={12} />
-              <span>Input: {tasks.input_source}</span>
+              <span>ข้อมูลนำเข้า: {tasks.input_source}</span>
           </div>
       )}
     </div>
